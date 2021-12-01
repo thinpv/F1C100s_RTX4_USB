@@ -1,0 +1,3 @@
+[submodule "spl-separated/tinyusb"]
+	path = spl-separated/tinyusb
+	url = https://github.com/t123yh/tinyusb.git
