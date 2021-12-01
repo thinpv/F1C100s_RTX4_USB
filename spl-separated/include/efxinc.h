@@ -10,7 +10,6 @@
 #ifdef __RTX
 #include "RTL.h"
 #endif
-#include "tickproc.h"
 
 #ifdef __cplusplus
 extern "C"  {

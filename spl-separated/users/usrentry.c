@@ -25,9 +25,11 @@ void UserEntryInit(void)
   //f1c100s_uart_setBaudrate(UART0_MID, 115200);
   //f1c100s_uart_clearfifo(UART0_MID);
 
+	/*
   if (!APP_CreateGuiService()) {
     sys_suspend();
   }
+	*/
 }
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,5 @@
+**/Temp
+*.uvgui.*
+output/*.bin
+*.build_log.htm
+*_Product.dep
