@@ -376,9 +376,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>PCB_TINY200V1</Define>
+              <Define>PCB_TINY200V1 CFG_TUSB_MCU=OPT_MCU_F1C100S CFG_TUSB_OS=OPT_OS_RTX4</Define>
               <Undefine></Undefine>
-              <IncludePath>.\users\include;.\machine\include;.\periph\include;.\include;.\emwin\Include</IncludePath>
+              <IncludePath>.\users\include;.\machine\include;.\periph\include;.\include;.\emwin\Include;.\tinyusb\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -463,14 +463,14 @@
               <FilePath>.\system\mmu_c.c</FilePath>
             </File>
             <File>
-              <FileName>ubox_a.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\system\ubox_a.s</FilePath>
-            </File>
-            <File>
               <FileName>Retarget.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\system\Retarget.c</FilePath>
+            </File>
+            <File>
+              <FileName>ubox_a.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\system\ubox_a.s</FilePath>
             </File>
             <File>
               <FileName>target_F1C100s.c</FileName>
@@ -526,6 +526,51 @@
               <FileName>usrentry.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\users\usrentry.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\users\usb_desc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>TinyUSB</GroupName>
+          <Files>
+            <File>
+              <FileName>tusb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\tusb.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\device\usbd_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\device\usbd.c</FilePath>
+            </File>
+            <File>
+              <FileName>tusb_fifo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\common\tusb_fifo.c</FilePath>
+            </File>
+            <File>
+              <FileName>hid_device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\class\hid\hid_device.c</FilePath>
+            </File>
+            <File>
+              <FileName>dcd_sunxi_musb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\portable\sunxi\dcd_sunxi_musb.c</FilePath>
+            </File>
+            <File>
+              <FileName>cdc_device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tinyusb\src\class\cdc\cdc_device.c</FilePath>
             </File>
           </Files>
         </Group>
