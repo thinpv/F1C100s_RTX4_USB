@@ -104,6 +104,10 @@
 // MSC Buffer size of Device Mass storage
 #define CFG_TUD_MSC_EP_BUFSIZE    512
 
+#if defined (__CC_ARM)
+#define __builtin_bswap16(v)              (uint16_t)(__rev(v) >> 16)
+#endif
+
 #ifdef __cplusplus
  }
 #endif
