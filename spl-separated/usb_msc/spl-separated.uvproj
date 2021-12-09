@@ -80,8 +80,8 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>1</RunUserProg2>
-            <UserProg1Name>fromelf --bincombined --output="$P..\..\output\@L.bin" !L</UserProg1Name>
-            <UserProg2Name>$P..\..\output\postscript.bat @L.bin</UserProg2Name>
+            <UserProg1Name>fromelf --bincombined --output="$Poutput\@L.bin" !L</UserProg1Name>
+            <UserProg2Name>$Poutput\postscript.bat @L.bin</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
@@ -177,7 +177,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2ARM.DLL</Flash2>
-          <Flash3>"C:\Users\thind\Documents\F1C100s_RTX4_USB\output\app-prog.bat" ()</Flash3>
+          <Flash3>"output\app-prog.bat" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -374,7 +374,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>PCB_TINY200V1 CFG_TUSB_MCU=OPT_MCU_F1C100S CFG_TUSB_OS=OPT_OS_RTX4</Define>
+              <Define>PCB_TINY200V2 CFG_TUSB_MCU=OPT_MCU_F1C100S CFG_TUSB_OS=OPT_OS_RTX4</Define>
               <Undefine></Undefine>
               <IncludePath>.\users\include;.\..\machine\include;.\..\periph\include;.\..\include;.\..\emwin\Include;.\..\tinyusb\src</IncludePath>
             </VariousControls>
@@ -392,7 +392,7 @@
             <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>PCB_TINY200V1</Define>
+              <Define>PCB_TINY200V2</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
