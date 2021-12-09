@@ -4,9 +4,9 @@
 
             ALIGN   4
             IF      :DEF:PCB_TINY200V2
-            INCBIN  ..\output\f1c100s-spl_uart1.bin
+            INCBIN  ..\..\output\f1c100s-spl_uart1.bin
             ELSE
-            INCBIN  ..\output\f1c100s-spl_uart0.bin
+            INCBIN  ..\..\output\f1c100s-spl_uart0.bin
             ENDIF
 
 ;///////////////////////////////////////////////////////////////////////////////

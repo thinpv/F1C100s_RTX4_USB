@@ -10,7 +10,7 @@
       <TargetName>Product</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -80,8 +80,8 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>1</RunUserProg2>
-            <UserProg1Name>fromelf --bincombined --output="$P..\output\@L.bin" !L</UserProg1Name>
-            <UserProg2Name>$P..\output\postscript.bat @L.bin</UserProg2Name>
+            <UserProg1Name>fromelf --bincombined --output="$P..\..\output\@L.bin" !L</UserProg1Name>
+            <UserProg2Name>$P..\..\output\postscript.bat @L.bin</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
@@ -168,16 +168,16 @@
         </DebugOption>
         <Utilities>
           <Flash1>
-            <UseTargetDll>1</UseTargetDll>
-            <UseExternalTool>0</UseExternalTool>
-            <RunIndependent>0</RunIndependent>
+            <UseTargetDll>0</UseTargetDll>
+            <UseExternalTool>1</UseExternalTool>
+            <RunIndependent>1</RunIndependent>
             <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
             <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2ARM.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3>"C:\Users\thind\Documents\F1C100s_RTX4_USB\output\app-prog.bat" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -223,8 +223,6 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
-            <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>0</StupSel>
@@ -378,7 +376,7 @@
               <MiscControls></MiscControls>
               <Define>PCB_TINY200V1 CFG_TUSB_MCU=OPT_MCU_F1C100S CFG_TUSB_OS=OPT_OS_RTX4</Define>
               <Undefine></Undefine>
-              <IncludePath>.\users\include;.\machine\include;.\periph\include;.\include;.\emwin\Include;.\tinyusb\src</IncludePath>
+              <IncludePath>.\users\include;.\..\machine\include;.\..\periph\include;.\..\include;.\..\emwin\Include;.\..\tinyusb\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -391,7 +389,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>PCB_TINY200V1</Define>
@@ -409,7 +407,7 @@
             <TextAddressRange>0x10000000</TextAddressRange>
             <DataAddressRange>0x00200000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>.\system\ldscript.sct</ScatterFile>
+            <ScatterFile>.\..\system\ldscript.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc>--datacompressor=on</Misc>
@@ -425,12 +423,12 @@
             <File>
               <FileName>f1c100s-intc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\machine\f1c100s-intc.c</FilePath>
+              <FilePath>.\..\machine\f1c100s-intc.c</FilePath>
             </File>
             <File>
               <FileName>sys-uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\machine\sys-uart.c</FilePath>
+              <FilePath>.\..\machine\sys-uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -440,52 +438,52 @@
             <File>
               <FileName>startup_F1C100s.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\system\startup_F1C100s.s</FilePath>
+              <FilePath>.\..\system\startup_F1C100s.s</FilePath>
             </File>
             <File>
               <FileName>spl.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\system\spl.s</FilePath>
+              <FilePath>.\..\system\spl.s</FilePath>
             </File>
             <File>
               <FileName>uboot.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\system\uboot.s</FilePath>
+              <FilePath>.\..\system\uboot.s</FilePath>
             </File>
             <File>
               <FileName>mmu_a.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\system\mmu_a.s</FilePath>
+              <FilePath>.\..\system\mmu_a.s</FilePath>
             </File>
             <File>
               <FileName>mmu_c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system\mmu_c.c</FilePath>
+              <FilePath>.\..\system\mmu_c.c</FilePath>
             </File>
             <File>
               <FileName>Retarget.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system\Retarget.c</FilePath>
+              <FilePath>.\..\system\Retarget.c</FilePath>
             </File>
             <File>
               <FileName>ubox_a.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\system\ubox_a.s</FilePath>
+              <FilePath>.\..\system\ubox_a.s</FilePath>
             </File>
             <File>
               <FileName>target_F1C100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system\target_F1C100s.c</FilePath>
+              <FilePath>.\..\system\target_F1C100s.c</FilePath>
             </File>
             <File>
               <FileName>RTX_Conf_F1C100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system\RTX_Conf_F1C100s.c</FilePath>
+              <FilePath>.\..\system\RTX_Conf_F1C100s.c</FilePath>
             </File>
             <File>
               <FileName>efx_main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system\efx_main.c</FilePath>
+              <FilePath>.\..\system\efx_main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -495,27 +493,27 @@
             <File>
               <FileName>clk-f1c100s-pll.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\periph\clk-f1c100s-pll.c</FilePath>
+              <FilePath>.\..\periph\clk-f1c100s-pll.c</FilePath>
             </File>
             <File>
               <FileName>fb-f1c100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\periph\fb-f1c100s.c</FilePath>
+              <FilePath>.\..\periph\fb-f1c100s.c</FilePath>
             </File>
             <File>
               <FileName>gpio-f1c100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\periph\gpio-f1c100s.c</FilePath>
+              <FilePath>.\..\periph\gpio-f1c100s.c</FilePath>
             </File>
             <File>
               <FileName>pwm-f1c100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\periph\pwm-f1c100s.c</FilePath>
+              <FilePath>.\..\periph\pwm-f1c100s.c</FilePath>
             </File>
             <File>
               <FileName>reset-f1c100s.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\periph\reset-f1c100s.c</FilePath>
+              <FilePath>.\..\periph\reset-f1c100s.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -540,37 +538,37 @@
             <File>
               <FileName>tusb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\tusb.c</FilePath>
+              <FilePath>.\..\tinyusb\src\tusb.c</FilePath>
             </File>
             <File>
               <FileName>usbd_control.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\device\usbd_control.c</FilePath>
+              <FilePath>.\..\tinyusb\src\device\usbd_control.c</FilePath>
             </File>
             <File>
               <FileName>usbd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\device\usbd.c</FilePath>
+              <FilePath>.\..\tinyusb\src\device\usbd.c</FilePath>
             </File>
             <File>
               <FileName>tusb_fifo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\common\tusb_fifo.c</FilePath>
+              <FilePath>.\..\tinyusb\src\common\tusb_fifo.c</FilePath>
             </File>
             <File>
               <FileName>hid_device.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\class\hid\hid_device.c</FilePath>
+              <FilePath>.\..\tinyusb\src\class\hid\hid_device.c</FilePath>
             </File>
             <File>
               <FileName>dcd_sunxi_musb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\portable\sunxi\dcd_sunxi_musb.c</FilePath>
+              <FilePath>.\..\tinyusb\src\portable\sunxi\dcd_sunxi_musb.c</FilePath>
             </File>
             <File>
               <FileName>cdc_device.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\tinyusb\src\class\cdc\cdc_device.c</FilePath>
+              <FilePath>.\..\tinyusb\src\class\cdc\cdc_device.c</FilePath>
             </File>
           </Files>
         </Group>
