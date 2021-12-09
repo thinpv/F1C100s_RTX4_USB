@@ -1,5 +1,5 @@
 // 本文件由洪旭耀设计，可以通过QQ联系作者：26750452
-#include <usrinc.h>
+#include <efxinc.h>
 #include <f1c100s-irq.h>
 #include <tusb.h>
 #include <ctype.h>
