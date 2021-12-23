@@ -376,7 +376,7 @@
               <MiscControls></MiscControls>
               <Define>PCB_TINY200V2 CFG_TUSB_MCU=OPT_MCU_F1C100S CFG_TUSB_OS=OPT_OS_RTX4</Define>
               <Undefine></Undefine>
-              <IncludePath>.\users\include;.\..\machine\include;.\..\periph\include;.\..\include;.\..\emwin\Include;.\..\tinyusb\src</IncludePath>
+              <IncludePath>.\users\include;.\..\machine\include;.\..\periph\include;.\..\include;.\..\emwin\Include;.\..\tinyusb\src;.\..\tinyusb\hw</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
